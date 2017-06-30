@@ -97,7 +97,7 @@ try
 							_nearestSafe = (nearestObjects [(getPosASL _x), ["Exile_Container_Safe"], _maximumTerritoryRadius]);
 							if ( ( count _nearestSafe) >= _numberOfSafesAllowed) then
 							{
-								throw 6; 
+								throw 100; 
 							};
 						};
                         if (_constructionConfigName isEqualTo "StorageCrate") then{
@@ -105,7 +105,7 @@ try
                             _nearestStorageCrates = (nearestObjects [(getPosASL _x), ["Exile_Container_StorageCrate"], _maximumTerritoryRadius]);
                             if ( ( count _nearestStorageCrates) >= _numberOfStorageCratesAllowed) then
                             {
-                                throw 6;
+                                throw 101;
                             };
                         };
                         if (_constructionConfigName isEqualTo "CamoTent") then{
@@ -113,7 +113,7 @@ try
                             _nearestCamoTents = (nearestObjects [(getPosASL _x), ["Exile_Container_CamoTent"], _maximumTerritoryRadius]);
                             if ( ( count _nearestCamoTents) >= _numberOfCamoTentsAllowed) then
                             {
-                                throw 6;
+                                throw 102;
                             };
                         }; 
 						throw 0;

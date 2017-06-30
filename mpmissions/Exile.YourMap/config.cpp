@@ -36,8 +36,9 @@ class CfgExileCustomCode
 		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
 	*/
 	
-	ExileClient_util_world_canBuildHere                            = "overrides\ExileClient_util_world_canBuildHere.sqf";
-	ExileServer_object_supplyBox_network_installSupplyBoxRequest   = "overrides\ExileServer_object_supplyBox_network_installSupplyBoxRequest.sqf";
+	ExileClient_util_world_canBuildHere                            	= "overrides\ExileClient_util_world_canBuildHere.sqf";
+	ExileServer_object_supplyBox_network_installSupplyBoxRequest   	= "overrides\ExileServer_object_supplyBox_network_installSupplyBoxRequest.sqf";
+	ExileServer_object_construction_network_buildConstructionRequest= "overrides\ExileServer_object_construction_network_buildConstructionRequest.sqf";
 };
 
 class CfgTerritories

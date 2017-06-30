@@ -57,6 +57,7 @@ in the **Config.cpp** in the ection **__CfgExileCustomCode__** you Add:
 ```c++
     ExileClient_util_world_canBuildHere                            = "overrides\ExileClient_util_world_canBuildHere.sqf";
     ExileServer_object_supplyBox_network_installSupplyBoxRequest   = "overrides\ExileServer_object_supplyBox_network_installSupplyBoxRequest.sqf";
+    ExileServer_object_construction_network_buildConstructionRequest= "overrides\ExileServer_object_construction_network_buildConstructionRequest.sqf";
 ```  
 
 #### Step 4
