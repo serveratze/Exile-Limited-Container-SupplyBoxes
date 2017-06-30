@@ -14,7 +14,6 @@ class CfgInteractionMenus
 				condition = "call ExileClient_util_world_isInOwnTerritory";
 				action = "_this spawn ExileClient_object_container_pack";
 			};
-
 		};
 	};
 };
@@ -59,4 +58,28 @@ class CfgTerritories
 		{45000,                 135,        270,                22,                 9,                   15,                  15                  }, // Level 9
 		{50000,                 150,        300,                25,                 10,                  15,                  15                  }  // Level 10
 	};
+
+	// A shortcut of the above maximum radius
+	maximumRadius = 150;
+
+	// The above * 2 plus coverving the 20m you can move while placing things
+	minimumDistanceToOtherTerritories = 325; 
+
+	// Maximum number of territories a player can own
+	maximumNumberOfTerritoriesPerPlayer = 2;
+
+	/**
+	 * Defines the minimum distance to safe zones / trader cities where players
+	 * cannot build territories
+	 */
+	minimumDistanceToTraderZones = 1000;
+
+	/**
+	 * Defines the minimum distance to spawn zones where players
+	 * cannot build territories
+	 */
+	minimumDistanceToSpawnZones = 1000;
+
+	// Amount of pop tabs per object to pay
+	popTabAmountPerObject = 10;
 };
