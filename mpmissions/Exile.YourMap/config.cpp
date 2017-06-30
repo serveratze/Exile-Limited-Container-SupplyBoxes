@@ -46,7 +46,7 @@ class CfgTerritories
 	// Level 1 is allways for Pop Tabs, >= 2 for Respect
 	prices[] = 
 	{
-		// Purchase Price 		Radius 		Number of Objects	Number of Safes		Number of Boxes		Number of Crates    Number of Tents
+		// Purchase Price       Radius      Number of Objects   Number of Safes     Number of Boxes     Number of Crates    Number of Tents
 		{5000,                  15,         30,                 5,                  1                   5                   5                   }, // Level 1
 		{10000,                 30,         60,                 7,                  2                   5                   5                   }, // Level 2 
 		{15000,                 45,         90,                 9,                  3                   5                   5                   }, // Level 3
