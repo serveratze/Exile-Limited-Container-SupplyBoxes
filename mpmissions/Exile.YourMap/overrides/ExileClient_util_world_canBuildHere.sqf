@@ -100,6 +100,22 @@ try
 								throw 6; 
 							};
 						};
+                        if (_constructionConfigName isEqualTo "StorageCrate") then{
+                            _numberOfStorageCratesAllowed = _territoryLevelConfig select 5;
+                            _nearestStorageCrates = (nearestObjects [(getPosASL _x), ["Exile_Container_StorageCrate"], _maximumTerritoryRadius]);
+                            if ( ( count _nearestStorageCrates) >= _numberOfStorageCratesAllowed) then
+                            {
+                                throw 6;
+                            };
+                        };
+                        if (_constructionConfigName isEqualTo "CamoTent") then{
+                            _numberOfCamoTentsAllowed = _territoryLevelConfig select 6;
+                            _nearestCamoTents = (nearestObjects [(getPosASL _x), ["Exile_Container_CamoTent"], _maximumTerritoryRadius]);
+                            if ( ( count _nearestCamoTents) >= _numberOfCamoTentsAllowed) then
+                            {
+                                throw 6;
+                            };
+                        }; 
 						throw 0;
 					};
 				};
